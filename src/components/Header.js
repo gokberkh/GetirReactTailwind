@@ -7,26 +7,26 @@ export default function Header() {
     <div className="bg-brand-color ">
       <div className="container mx-auto h-11  flex items-center justify-between">
         <div className=" flex items-center space-x-2.5">
-          <img className="" src={getirLogo} />
+          <img className="" src={getirLogo} alt="" />
         </div>
 
         <nav className="flex gap-x-8 text-sm font-semibold">
           <a
-            href="#"
+            href="#/"
             className="text-white flex items-center gap-x-2 text-opacity-80 transition-all hover:text-opacity-100"
           >
             <BiGlobe size="20" />
             Türkçe (TR)
           </a>
           <a
-            href="#"
+            href="#/"
             className="text-white flex items-center gap-x-2 text-opacity-80 transition-all hover:text-opacity-100"
           >
             <RiUserFill size="20" />
             Giriş Yap
           </a>
           <a
-            href="#"
+            href="#/"
             className="text-white flex items-center gap-x-2 text-opacity-80 transition-all hover:text-opacity-100"
           >
             <RiUserAddFill size="20" />
