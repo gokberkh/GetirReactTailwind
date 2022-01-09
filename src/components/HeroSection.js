@@ -46,7 +46,7 @@ export default function HeroSection() {
         </div>
       </Slider>
 
-      <div className="container  flex  justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
+      <div className="container w-3/4 flex  justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
         <div>
           <img
             alt=""

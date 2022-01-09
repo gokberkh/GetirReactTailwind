@@ -16,7 +16,7 @@ export default function Categories() {
 
   return (
     <div className="bg-white py-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto w-3/4">
         <Title>Kategoriler</Title>
         <div className="grid grid-cols-10">
           {!categories.length && "Yükleniyor"}

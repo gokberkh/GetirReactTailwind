@@ -11,7 +11,7 @@ export default function Favorites() {
   }, []);
 
   return (
-    <div>
+    <div className="mx-auto w-3/4 container">
       <Title>Favoriler</Title>
       <div className="grid grid-cols-8 gap-0.1 rounded-lg overflow-hidden ">
         {products.length &&
