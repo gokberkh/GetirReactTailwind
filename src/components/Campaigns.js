@@ -42,12 +42,36 @@ export default function Campaigns() {
     autoplaySpeed: 3500,
     cssEase: "linear",
     autoplay: true,
+    arrows: true,
     nextArrow: <NextBtn />,
     prevArrow: <PrevBtn />,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="container mx-auto py-8 w-3/4">
+    <div className="container mx-auto py-8 ">
       <Title>Kampanyalar</Title>
       <Slider className="-mx-2" {...settings}>
         {banners.length &&
