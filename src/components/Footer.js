@@ -68,7 +68,7 @@ export default function Footer() {
 
   return (
     <div className="bg-white mt-10">
-      <div className="container mx-auto w-3/4">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-4 pt-10">
           <section>
             <nav className="grid gap-y-4">

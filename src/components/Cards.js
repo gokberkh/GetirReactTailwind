@@ -9,7 +9,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-x-4 w-3/4 container mx-auto ">
+    <div className="grid grid-cols-3 gap-x-4  container mx-auto ">
       {cards.length &&
         cards.map((card) => (
           <div className="bg-white p-14 rounded-lg shadow-md flex flex-col items-center text-center ">
