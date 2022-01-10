@@ -5,12 +5,12 @@ import getirLogo from "../images/getirLogo.svg";
 export default function Header() {
   return (
     <div className="bg-brand-color sticky z-50 top-0">
-      <div className="container w-3/4 mx-auto h-11  flex items-center justify-between">
+      <div className="container  mx-auto h-11  flex items-center justify-between">
         <div className=" flex items-center space-x-2.5">
           <img src={getirLogo} alt="" />
         </div>
 
-        <nav className="flex gap-x-8 text-sm font-semibold">
+        <nav className="hidden md:flex gap-x-8 text-sm font-semibold">
           <a
             href="#/"
             className="text-white flex items-center gap-x-2 text-opacity-80 transition-all hover:text-opacity-100"

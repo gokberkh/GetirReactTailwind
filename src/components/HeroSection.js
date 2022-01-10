@@ -3,8 +3,12 @@ import ReactFlagsSelect from "react-flags-select";
 import { FaFacebook } from "react-icons/fa";
 import React, { useState } from "react";
 
+import { useWindowWidth } from "@react-hook/window-size";
+
 export default function HeroSection() {
   const [selected, setSelected] = useState("TR");
+
+  const windowWidth = useWindowWidth();
 
   const phones = {
     US: "+1",
@@ -27,27 +31,29 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
-      <Slider {...settings}>
-        <div>
-          <img
-            alt=""
-            className="w-full  h-[500px] object-cover"
-            src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"
-          />
-        </div>
+    <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
+      {windowWidth >= 768 && (
+        <Slider {...settings}>
+          <div>
+            <img
+              alt=""
+              className="w-full  h-[500px] object-cover"
+              src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"
+            />
+          </div>
 
-        <div>
-          <img
-            alt=""
-            className="w-full h-[500px] object-cover"
-            src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg"
-          />
-        </div>
-      </Slider>
+          <div>
+            <img
+              alt=""
+              className="w-full h-[500px] object-cover"
+              src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg"
+            />
+          </div>
+        </Slider>
+      )}
 
-      <div className="container w-3/4 flex  justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
-        <div>
+      <div className="md:container  flex  justify-between items-center relative md:absolute top-0 left-0 md:left-1/2  translate-x-0  md:-translate-x-1/2 h-full z-20">
+        <div className="hidden md:block">
           <img
             alt=""
             src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
@@ -58,7 +64,7 @@ export default function HeroSection() {
           </h3>
         </div>
 
-        <div className="w-[400px] rounded-lg bg-gray-50 p-6">
+        <div className="w-[400px] md:rounded-lg bg-gray-50 p-6">
           <h4 className="transition-colors text-primary-brand-color bg-white text-center font-semibold mb-4">
             Giriş yap veya kayıt ol
           </h4>
