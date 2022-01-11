@@ -31,7 +31,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
+    <div className=" relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
       {windowWidth >= 768 && (
         <Slider {...settings}>
           <div>
@@ -52,7 +52,7 @@ export default function HeroSection() {
         </Slider>
       )}
 
-      <div className="md:container  flex  justify-between items-center relative md:absolute top-0 left-0 md:left-1/2  translate-x-0  md:-translate-x-1/2 h-full z-20">
+      <div className="md:container   flex  justify-between items-center relative md:absolute top-0 left-0 md:left-1/2  translate-x-0  md:-translate-x-1/2 h-full z-20">
         <div className="hidden md:block">
           <img
             alt=""
@@ -64,7 +64,7 @@ export default function HeroSection() {
           </h3>
         </div>
 
-        <div className="w-[400px] md:rounded-lg bg-gray-50 p-6">
+        <div className="w-full md:w-[400px] md:rounded-lg bg-gray-50 p-6">
           <h4 className="transition-colors text-primary-brand-color bg-white text-center font-semibold mb-4">
             Giriş yap veya kayıt ol
           </h4>
